@@ -70,6 +70,8 @@ final class MovieQuizViewController: UIViewController {
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var textLabel: UILabel!
     @IBOutlet private var counterLabel: UILabel!
+    @IBOutlet private var yesButton: UIButton!
+    @IBOutlet private var noButton: UIButton!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -135,10 +137,14 @@ final class MovieQuizViewController: UIViewController {
         }
         
         imageView.layer.borderColor = isCorrect ? UIColor.ypGreen.cgColor : UIColor.ypRed.cgColor
-
+        yesButton.isEnabled = false
+        noButton.isEnabled = false
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.showNextQuestionOrResult()
             self.imageView.layer.borderColor = UIColor.clear.cgColor
+            self.yesButton.isEnabled = true
+            self.noButton.isEnabled = true
         }
     }
     

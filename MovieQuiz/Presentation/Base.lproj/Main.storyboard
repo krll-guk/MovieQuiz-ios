@@ -56,16 +56,16 @@
                                         <rect key="frame" x="0.0" y="624.5" width="374" height="99.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейтинг этого фильма меньше чем 5?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lll-ym-lmG" userLabel="Question Label">
-                                                <rect key="frame" x="42" y="13" width="290" height="73.5"/>
+                                                <rect key="frame" x="42" y="0.0" width="290" height="99.5"/>
                                                 <fontDescription key="fontDescription" name="YSDisplay-Bold" family="YS Display" pointSize="23"/>
                                                 <color key="textColor" name="White"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Lll-ym-lmG" firstAttribute="top" secondItem="egU-nq-t4T" secondAttribute="top" constant="13" id="I1G-Fz-n0F"/>
+                                            <constraint firstItem="Lll-ym-lmG" firstAttribute="top" secondItem="egU-nq-t4T" secondAttribute="top" id="I1G-Fz-n0F"/>
                                             <constraint firstAttribute="trailing" secondItem="Lll-ym-lmG" secondAttribute="trailing" constant="42" id="Jwn-UN-JG9"/>
-                                            <constraint firstAttribute="bottom" secondItem="Lll-ym-lmG" secondAttribute="bottom" constant="13" id="sfc-xy-PvP"/>
+                                            <constraint firstAttribute="bottom" secondItem="Lll-ym-lmG" secondAttribute="bottom" id="sfc-xy-PvP"/>
                                             <constraint firstItem="Lll-ym-lmG" firstAttribute="leading" secondItem="egU-nq-t4T" secondAttribute="leading" constant="42" id="sr9-oU-W5w"/>
                                         </constraints>
                                     </view>
@@ -121,13 +121,16 @@
                         <constraints>
                             <constraint firstItem="9jq-TF-xkJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="VhJ-0x-FFl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9jq-TF-xkJ" secondAttribute="trailing" constant="20" id="d5Y-ml-dB6"/>
+                            <constraint firstItem="9jq-TF-xkJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fEC-Yy-3n0"/>
                             <constraint firstItem="9jq-TF-xkJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ysW-Nq-BVi"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="counterLabel" destination="ZB3-MM-uTu" id="SWd-I5-nK2"/>
                         <outlet property="imageView" destination="b5M-67-Jbz" id="IqO-Wl-dKB"/>
+                        <outlet property="noButton" destination="Ef6-VV-oY0" id="X7f-40-1uL"/>
                         <outlet property="textLabel" destination="Lll-ym-lmG" id="iUS-kB-mAG"/>
+                        <outlet property="yesButton" destination="pyX-BI-y2F" id="cgF-Dr-VGM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
