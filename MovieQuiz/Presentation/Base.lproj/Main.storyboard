@@ -115,10 +115,15 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="L36-ca-gOW">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="Black"/>
                         <constraints>
+                            <constraint firstItem="L36-ca-gOW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2s7-ws-8Jb"/>
+                            <constraint firstItem="L36-ca-gOW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Krv-H7-LTr"/>
                             <constraint firstItem="9jq-TF-xkJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="VhJ-0x-FFl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9jq-TF-xkJ" secondAttribute="trailing" constant="20" id="d5Y-ml-dB6"/>
                             <constraint firstItem="9jq-TF-xkJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fEC-Yy-3n0"/>
@@ -126,6 +131,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="L36-ca-gOW" id="hZT-VK-6ge"/>
                         <outlet property="counterLabel" destination="ZB3-MM-uTu" id="SWd-I5-nK2"/>
                         <outlet property="imageView" destination="b5M-67-Jbz" id="IqO-Wl-dKB"/>
                         <outlet property="noButton" destination="Ef6-VV-oY0" id="X7f-40-1uL"/>
